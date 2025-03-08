@@ -4,9 +4,10 @@ import MapView, { Marker } from 'react-native-maps';
 // import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Ionicons } from "@expo/vector-icons";
 import Geocoder from 'react-native-geocoding';
+import { API_KEY } from '@env';
 
 // Google Maps API Key
-const API_KEY = 'AIzaSyBfQKarm1Xqsbd137c0OQ1X4EFay1Btk_A'; // Replace with your actual API key
+const API_KEY =API_KEY;
 Geocoder.init(API_KEY);
 
 const RideBookingScreen = ({ navigation , route }) => {
